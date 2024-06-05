@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -17,8 +17,8 @@
             position: relative; /* Para posicionar elementos hijos de manera absoluta */
         }
         .container {
-            max-width: 600px;
-            margin: 165px auto;
+            max-width: 90%;
+            margin: 100px auto;
             padding: 20px;
             background-color: rgba(245, 179, 179, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
             border-radius: 5px;
@@ -29,63 +29,50 @@
         }
         p {
             color: #202020;
-            font-size: 18px;
-            line-height: 2;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .overlay-image, .image, .image2, .gifputa, .gifputa2 {
+            position: absolute;
         }
         .overlay-image {
-            position: absolute; 
-            top: 100%; 
-            left: 10%; 
+            top: 20%; 
+            left: 50%; 
             transform: translate(-50%, -50%); 
-            width: 40%; 
-            height: 50%; 
+            width: 60%; 
         }
         .image {
-            position: absolute;
-            top: 100%;
-            left: 68%;
+            top: 60%;
+            left: 85%;
             transform: translate(-50%, -50%);
             width: 20%;
-            height: 20%;
         }
         .image2 {
-            position: absolute; 
-            top: 92%; 
-            left: 23%; 
-            transform: translate(-50%, -50%); 
-            transform: scaleX(-1);
-            width: 20%; 
-            height: 20%;
-
+            top: 60%; 
+            left: 15%; 
+            transform: translate(-50%, -50%) scaleX(-1);
+            width: 20%;
         }
         .gifputa {
-            position: absolute;
-            top: 50%;
-            left: 15%;
-            transform: translate(-50%, -50%);
-            transform:rotateZ(-45deg);
-            width: 10%;
-            height: 20%;
+            top: 75%;
+            left: 25%;
+            transform: translate(-50%, -50%) rotateZ(-45deg);
+            width: 15%;
         }
         .gifputa2 { 
-            position: absolute;
-            top: 50%;
+            top: 75%;
             left: 75%;
-            transform: translate(-50%, -50%);
-            transform: rotateZ(45deg);
-            width: 10%;
-            height: 20%;
+            transform: translate(-50%, -50%) rotateZ(45deg);
+            width: 15%;
         }
-
-
     </style>
 </head>
 <body>
-    <img src="imagenes/438332801_1133426714609713_3629158352500301720_n.png" class="overlay-image" alt="Imagen sobre el fondo"> <!-- Cambia 'ruta_de_la_imagen_sobre_el_fondo.jpg' por la ruta de tu imagen superpuesta -->
-    <img src="imagenes/nepe.png" class="image">;
-    <img src="imagenes/nepe2.png" class="image2">;
-    <img src="imagenes/5ac6ed128e50bb3eee5ba24686f9959b.gif" class="gifputa">;
-    <img src="imagenes/5ac6ed128e50bb3eee5ba24686f9959b.gif" class="gifputa2">;
+    <img src="imagenes/438332801_1133426714609713_3629158352500301720_n.png" class="overlay-image" alt="Imagen sobre el fondo">
+    <img src="imagenes/nepe.png" class="image" alt="Imagen 1">
+    <img src="imagenes/nepe2.png" class="image2" alt="Imagen 2">
+    <img src="imagenes/5ac6ed128e50bb3eee5ba24686f9959b.gif" class="gifputa" alt="GIF 1">
+    <img src="imagenes/5ac6ed128e50bb3eee5ba24686f9959b.gif" class="gifputa2" alt="GIF 2">
     <div class="container">
         <h1>Poema para Belencita hermosa linda teamo muak</h1>
         <p>Mañanas amargas de silencio vacío,<br>
