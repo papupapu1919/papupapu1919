@@ -12,20 +12,22 @@
             padding: 0;
             background-image: url(https://i.gifer.com/origin/7a/7ad44d56fda28bf7ab85a8c4838b5d6d_w200.gif);
             background-size: cover;
-            background-position: center; 
+            background-position: center;
             text-align: center;
-            position: relative; /* Para posicionar elementos hijos de manera absoluta */
+            position: relative;
+            overflow: hidden;
         }
         .container {
             max-width: 90%;
-            margin: 100px auto;
+            margin: 20px auto;
             padding: 20px;
-            background-color: rgba(245, 179, 179, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+            background-color: rgba(245, 179, 179, 0.8);
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(224, 151, 151, 0.753);
         }
         h1 {
             color: #333;
+            font-size: 24px;
         }
         p {
             color: #202020;
@@ -36,34 +38,48 @@
             position: absolute;
         }
         .overlay-image {
-            top: 20%; 
+            top: 10%; 
             left: 50%; 
-            transform: translate(-50%, -50%); 
+            transform: translate(-50%, 0); 
             width: 60%; 
         }
         .image {
-            top: 60%;
-            left: 85%;
-            transform: translate(-50%, -50%);
+            bottom: 20%;
+            right: 10%;
             width: 20%;
         }
         .image2 {
-            top: 60%; 
-            left: 15%; 
-            transform: translate(-50%, -50%) scaleX(-1);
+            bottom: 20%;
+            left: 10%;
+            transform: scaleX(-1);
             width: 20%;
         }
         .gifputa {
-            top: 75%;
-            left: 25%;
-            transform: translate(-50%, -50%) rotateZ(-45deg);
+            top: 70%;
+            left: 20%;
+            transform: rotateZ(-45deg);
             width: 15%;
         }
-        .gifputa2 { 
-            top: 75%;
-            left: 75%;
-            transform: translate(-50%, -50%) rotateZ(45deg);
+        .gifputa2 {
+            top: 70%;
+            right: 20%;
+            transform: rotateZ(45deg);
             width: 15%;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .overlay-image, .image, .image2, .gifputa, .gifputa2 {
+                width: 20%;
+            }
+            .overlay-image {
+                top: 5%;
+                width: 50%;
+            }
         }
     </style>
 </head>
