@@ -15,10 +15,11 @@
             background-position: center;
             text-align: center;
             position: relative;
-            overflow: hidden;
+            overflow: hidden; /* Para evitar desplazamiento inesperado */
         }
         .container {
-            max-width: 90%;
+            width: 90%;
+            max-width: 600px;
             margin: 20px auto;
             padding: 20px;
             background-color: rgba(245, 179, 179, 0.8);
@@ -27,41 +28,39 @@
         }
         h1 {
             color: #333;
-            font-size: 24px;
+            font-size: 22px;
         }
         p {
             color: #202020;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
         }
         .overlay-image, .image, .image2, .gifputa, .gifputa2 {
             position: absolute;
         }
         .overlay-image {
-            top: 10%; 
-            left: 50%; 
-            transform: translate(-50%, 0); 
-            width: 60%; 
+            bottom: 5%; 
+            left: 5%; 
+            width: 20%; 
         }
         .image {
-            bottom: 20%;
-            right: 10%;
-            width: 20%;
+            top: 5%;
+            left: 5%;
+            width: 15%;
         }
         .image2 {
-            bottom: 20%;
-            left: 10%;
-            transform: scaleX(-1);
-            width: 20%;
+            top: 5%;
+            right: 5%;
+            width: 15%;
         }
         .gifputa {
-            top: 70%;
+            top: 85%;
             left: 20%;
             transform: rotateZ(-45deg);
             width: 15%;
         }
         .gifputa2 {
-            top: 70%;
+            top: 85%;
             right: 20%;
             transform: rotateZ(45deg);
             width: 15%;
@@ -71,14 +70,13 @@
                 font-size: 20px;
             }
             p {
-                font-size: 14px;
+                font-size: 12px;
             }
             .overlay-image, .image, .image2, .gifputa, .gifputa2 {
                 width: 20%;
             }
             .overlay-image {
-                top: 5%;
-                width: 50%;
+                width: 30%;
             }
         }
     </style>
